@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.Keys;
 
 public class FirstLessonTest {
+
     private WebDriver driver;
 
     @BeforeAll
@@ -21,7 +22,6 @@ public class FirstLessonTest {
 
     @Test
     void basicSearchTest() {
-
         driver = new ChromeDriver();
         driver.get("https://www.google.com/");
 
@@ -36,7 +36,6 @@ public class FirstLessonTest {
         );
 
         assertEquals("Space 307 - Google Search", driver.getTitle());
-
     }
 
     @AfterEach
